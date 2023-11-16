@@ -73,6 +73,7 @@ void opcode_mul(stack_t **stack, unsigned int line_number);
 void opcode_mod(stack_t **stack, unsigned int line_number);
 void opcode_pchar(stack_t **stack, unsigned int line_number);
 void opcode_pstr(stack_t **stack, unsigned int line_number);
+void opcode_rotl(stack_t **stack);
 
 stack_t *add_node(stack_t **stack, const int n);
 int is_number(char *string);
