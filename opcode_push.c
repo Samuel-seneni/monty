@@ -32,8 +32,9 @@ void opcode_push(stack_t **stack, unsigned int line_number)
 /**
  * is_number - checks if a string is a number
  * @string: string to be checked
- * Return: 1 
+ * Return: 1
  */
+
 int is_number(char *string)
 {
 	if (string == NULL || *string == '\0')
@@ -41,7 +42,6 @@ int is_number(char *string)
 
 	if (*string == '-' || *string == '+')
 		string++;
-
 	while (*string != '\0')
 	{
 		if (*string < '0' || *string > '9')
